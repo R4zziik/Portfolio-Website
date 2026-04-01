@@ -137,3 +137,16 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+.sublime/
+
+# OS junk (macOS, Windows)
+.DS_Store
+Thumbs.db
+
+# Node.js (if you ever use npm packages)
+node_modules/
+npm-debug.log*
