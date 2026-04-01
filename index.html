@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Test</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 2rem;
+      background: #f5f5f5;
+    }
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+    .video-item {
+      background: white;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    video {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    p {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Test your videos</h1>
+  <div class="video-grid">
+    <!-- Replace these with your own video files -->
+    <div class="video-item">
+      <video controls>
+        <source src="videos/project1.mp4" type="video/mp4">
+        Your browser does not support video.
+      </video>
+      <p>Project 1 – description</p>
+    </div>
+
+    <div class="video-item">
+      <video controls>
+        <source src="videos/project2.mp4" type="video/mp4">
+        Your browser does not support video.
+      </video>
+      <p>Project 2 – description</p>
+    </div>
+
+    <div class="video-item">
+      <video controls poster="images/thumb.jpg">
+        <source src="videos/project3.mp4" type="video/mp4">
+        Your browser does not support video.
+      </video>
+      <p>Project 3 – with poster image</p>
+    </div>
+  </div>
+</body>
+</html>
